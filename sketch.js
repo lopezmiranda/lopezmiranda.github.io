@@ -1,8 +1,8 @@
 var particles_a = [];
 var particles_b = [];
 var particles_c = [];
-var nums =15;
-var noiseScale = 1111;
+var nums = 10;
+var noiseScale = 2222;
 
 function setup(){
 	createCanvas(windowWidth, windowHeight);
@@ -18,7 +18,7 @@ function draw(){
 	noStroke();
 	smooth();
 		for(var i = 0; i < nums; i++){
-		var radius = map(i,0,nums,5,7);
+		var radius = map(i,0,nums,2,3);
 		var alpha = map(i,0,nums,0,250);
 
 		// fill(69,33,124,alpha);
