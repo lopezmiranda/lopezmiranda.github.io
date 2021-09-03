@@ -1,8 +1,8 @@
 var particles_a = [];
 var particles_b = [];
 var particles_c = [];
-var nums =50;
-var noiseScale = 2222;
+var nums =15;
+var noiseScale = 1111;
 
 function setup(){
 	createCanvas(windowWidth, windowHeight);
@@ -18,7 +18,7 @@ function draw(){
 	noStroke();
 	smooth();
 		for(var i = 0; i < nums; i++){
-		var radius = map(i,0,nums,1,2);
+		var radius = map(i,0,nums,5,7);
 		var alpha = map(i,0,nums,0,250);
 
 		// fill(69,33,124,alpha);
@@ -44,7 +44,7 @@ function Particle(x, y){
 	this.dir = createVector(0, 0);
 	this.vel = createVector(0, 0);
 	this.pos = createVector(x, y);
-	this.speed = 0.4;
+	this.speed = 0.5;
 
 	this.move = function(){
 		var angle = noise(this.pos.x/noiseScale, this.pos.y/noiseScale)*TWO_PI*noiseScale;
