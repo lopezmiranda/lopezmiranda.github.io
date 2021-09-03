@@ -13,23 +13,29 @@ canvas {
 }
 
 #name .title {
-  font-family: 'Oxanium', sans-serif;
-  color:rgba(0, 0, 0, 0.7);
+  font-family: 'Kanit', sans-serif;
+  color:rgba(255, 255, 255, 0.7);
   text-shadow: 2.5px 2.5px 0px rgba(251, 198, 251, 0.5);;
   font-size: 50pt;
   font-weight: bold;
   position: relative;
+  animation-name: fadeIn;
+  animation-duration: 3s;
   animation-name: moveLeft;
   animation-duration: 2s;
 }
 
 #name .subtitle{
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Kanit', sans-serif;
   color:#ECEAF5;
   text-shadow: 5px 5px 3px black;
   font-size: 22pt;
   animation-duration: 2s;
   animation-name: fadeIn;
+}
+
+.box1{
+  background-color: #4f6820;
 }
 
 

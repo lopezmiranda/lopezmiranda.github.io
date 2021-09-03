@@ -2,7 +2,7 @@ var particles_a = [];
 var particles_b = [];
 var particles_c = [];
 var nums =50;
-var noiseScale = 1111;
+var noiseScale = 2222;
 
 function setup(){
 	createCanvas(windowWidth, windowHeight);
