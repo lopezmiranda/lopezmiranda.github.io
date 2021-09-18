@@ -5,8 +5,8 @@ var nums = 10;
 var noiseScale = 2222;
 
 function setup(){
-	createCanvas(windowWidth, windowHeight);
-	background(50, 47, 64);
+	createCanvas(windowWidth, 250);
+	background(0, 1, 2);
 	for(var i = 0; i < nums; i++){
 		particles_a[i] = new Particle(random(0, width),random(0,height));
 		particles_b[i] = new Particle(random(0, width),random(0,height));
@@ -18,21 +18,21 @@ function draw(){
 	noStroke();
 	smooth();
 		for(var i = 0; i < nums; i++){
-		var radius = map(i,0,nums,2,3);
+		var radius = map(i,0,nums,1,2.5);
 		var alpha = map(i,0,nums,0,250);
 
 		// fill(69,33,124,alpha);
-		fill(163,100,111,alpha)
+		fill(24,165,88,alpha)
 		particles_a[i].move();
 		particles_a[i].display(radius);
 		particles_a[i].checkEdge();
 
-		fill(167,172,217,alpha);
+		fill(163,235,177,alpha);
 		particles_b[i].move();
 		particles_b[i].display(radius);
 		particles_b[i].checkEdge();
 
-		fill(217,215,244,alpha);
+		fill(33,182,168,alpha);
 		particles_c[i].move();
 		particles_c[i].display(radius);
 		particles_c[i].checkEdge();
@@ -44,7 +44,7 @@ function Particle(x, y){
 	this.dir = createVector(0, 0);
 	this.vel = createVector(0, 0);
 	this.pos = createVector(x, y);
-	this.speed = 0.5;
+	this.speed = 0.45;
 
 	this.move = function(){
 		var angle = noise(this.pos.x/noiseScale, this.pos.y/noiseScale)*TWO_PI*noiseScale;
