@@ -5,7 +5,7 @@ function setup() {
 	createCanvas(windowWidth, 250);
 	// colorMode(HSB, 360, 100, 100, 100);
 	angleMode(DEGREES);
-	graphics = createGraphics(width, height);
+	graphics = createGraphics(windowWidth, height);
 	graphics.colorMode(HSB, 360, 100, 100, 100);
 	graphics.noStroke();
 
