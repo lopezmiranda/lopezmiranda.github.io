@@ -20,7 +20,7 @@ canvas {
   font-size: 50pt;
   font-weight: 100;
   position: relative;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 1px 1px 2px white;
   animation-name: fadeIn;
   animation-duration: 1s;
 }
