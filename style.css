@@ -2,6 +2,10 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', monospace;
+  background: rgb(0,0,0);
+  background: -webkit-linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
+  background: -o-linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
+  background: linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
 }
 
 canvas {
@@ -25,12 +29,12 @@ canvas {
   animation-duration: 1s;
 }
 
-#content {
+/*#content {
   background: rgb(0,0,0);
   background: -webkit-linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
   background: -o-linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
   background: linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
-}
+}*/
 
 #name .subtitle{
   font-family: 'Kanit', sans-serif;
