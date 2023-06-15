@@ -27,6 +27,7 @@ canvas {
 
 #content {
   height:100%;
+  flex-grow: 1;
 }
 
 #name .subtitle{
@@ -42,6 +43,7 @@ canvas {
 .wrapper {
   display:flex;
   height:100vh;
+  width:100%;
   background: rgb(0,0,0);
   background: -webkit-linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
   background: -o-linear-gradient(rgba(0,1,2,1) 0%, rgba(37,51,40,1) 100%);
