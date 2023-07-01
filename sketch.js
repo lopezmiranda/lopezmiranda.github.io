@@ -2,10 +2,10 @@ let palette;
 let graphics;
 
 function setup() {
-	createCanvas(windowWidth, 250);
+	createCanvas(windowWidth, windowHeight);
 	// colorMode(HSB, 360, 100, 100, 100);
 	angleMode(DEGREES);
-	graphics = createGraphics(windowWidth, 250);
+	graphics = createGraphics(windowWidth, windowHeight);
 	graphics.colorMode(HSB, 360, 100, 100, 100);
 	graphics.noStroke();
 
