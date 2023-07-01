@@ -20,6 +20,10 @@ function setup() {
 	noLoop();
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, 250);
+}
+
 function draw() {
 	let rs = random(10000);
 	clear();
