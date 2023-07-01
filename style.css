@@ -5,7 +5,6 @@ html, body {
 }
 
 canvas {
-  display:block;
   position:absolute;
   top:0;
   left:0;
@@ -13,11 +12,6 @@ canvas {
   width:100%;
   max-height:110%;
   z-index: -1;
-}
-
-#name {
-  position:relative;
-  height:250px;
 }
 
 #name .title {
